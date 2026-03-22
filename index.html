@@ -1,114 +1,135 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 9 Formulário</title>
-</head>
-<body>
-    <div>
-       <h1 id="Titulo">Faça seu cadastro</h1>
-       <p id="subtitulo">Complete suas informaçôes</p>
-    </div>
-    
-    <form>
-        <fieldset class="grupo">
-            <div class="campo">
-                <label for="nome"><strong>Nome</strong></label>
-                <input type="text" name="nome" id="nome" required>
-            </div>
-                
-            <div class="campo">
-                <label for="sobrenome">Sobrenome</label>
-                <input type="text" nome='Sobrenome' id="sobrenome" required>
-            </div>
-        </fieldset>
+<!doctype html>
+<html>
 
-        <div class="campo">
-            <label for="emali">Email</label>
-            <input type="email" name="email" id="email" required>
-        </div>
-
-        <div class="campo">
-            <label>Qual é seu o nível de escolaridade</label>
-            <label>
-                <input type="radio" name="nivel" value="Ensino Fundamental">Ensino Fundamental
-            </label>
-            <label>
-                <input type="radio" name="nivel" value="Ensino Médio">Ensino Médio
-            </label>
-            <label>
-                <input type="radio" name="nivel" value="Ensino Técnico/Profissionalizante">Ensino Técnico/Profissionalizante
-            </label>
-            <label>
-                <input type="radio" name="nivel" value="Ensino Superior">Ensino Fundamental
-            </label>
-            <label>
-                <input type="radio" name="nivel" value="Pós-Graduação">Ensino Fundamental
-            </label>
-        </div>
-
-        <div class="campo">
-            <label>Sua idade</label>
-            <select id="idade">
-                <option selected disabled value="">Selecione</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-                <option>13</option>
-                <option>14</option>
-                <option>15</option>
-                <option>16</option>
-                <option>17</option>
-                <option>18</option>
-                <option>19</option>
-                <option>20</option>
-                <option>21</option>
-                <option>22</option>
-                <option>23</option>
-                <option>24</option>
-                <option>25</option>
-            </select>
-        </div>
-
-       <fieldset class="grupo">
-            <div class="campo">
-                <label>Selecione quem mora com você</label>
-                <input type="checkbox" id="morar" name="morar" value="sozinho">
-                <label for="morar1">Sozinho</label>
-                <input type="checkbox" id="morar" name="morar" value="mãe">
-                <label for="morar2">Mão</label>
-                <input type="checkbox" id="morar" name="morar" value="pai">
-                <label for="morar3">Pai</label>
-                <input type="checkbox" id="morar" name="morar" value="vó">
-                <label for="morar4">Vó</label>
-                <input type="checkbox" id="morar" name="morar" value="vô">
-                <label for="morar5">Vô</label>
-                <input type="checkbox" id="morar" name="morar" value="amigo">
-                <label for="morar6">Amigo/a</label>
-                <input type="checkbox" id="morar" name="morar" value="outro">
-                <label for="morar7">Outro</label>
-            </div>
-       </fieldset>
-
-       <div class="campo">
-            <br>
-            <label>Conte um pouco sobre você</label>
-            <textarea row = "6" style="width: 26em;" id="sobre" nome="sobre"></textarea>
-       </div>
-
-       <button type="submit">Concluido</button>
+    <head>
         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
 
-    </form>
-</body>
+        
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+    <div class="container">
+        
+        <div>
+            <h1 id="titulo">Cadastro</h1>
+            <p id="subtitulo">Complete suas informações</p>
+            <br>
+        </div>
+
+        
+        <form>
+
+            <fieldset class="grupo">
+                
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            
+
+            
+                <div class="campo">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+             </fieldset>
+            
+            <div class="campo">
+                <label><strong>Qual é o seu nivel de escolaridade:?</strong></label>
+                <label>
+                    <input type="radio" name="nivel" value="ensinomedio" checked>Ensino Medio
+                </label>
+                <label>
+                    <input type="radio" name="nivel" value="ensinocompleto">Ensino Medio completo
+                </label>
+                <label>
+                    <input type="radio" name="nivel" value="graduacao">Graduação
+                </label>
+                <label>
+                    <input type="radio" name="nivel" value="posgraduacao">Pós Graduação
+                </label>
+            </div>
+
+            
+            <div class="campo">
+                <label for="idade"><strong>Qual é a sua idade: </strong></label>
+                <select id="idade" required>
+                    <option selected disabled value="">Selecione</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                
+                <div id="check">
+                    <label><strong>Selecione quem mora com você</strong></label><br><br>
+                    <input type="checkbox" id="parentes1" name="parentes1" value="HTML">
+                    <label for="parentes1">Pai</label>
+                    <input type="checkbox" id="parentes2" name="parentes2" value="CSS">
+                    <label for="parentes2">Mãe</label>
+                    <input type="checkbox" id="parentes3" name="parentes3" value="JavaScript">
+                    <label for="parentes3">Vó</label>
+                    <input type="checkbox" id="parentes4" name="parentes4" value="PHP">
+                    <label for="parentes4">Vô</label>
+                    <input type="checkbox" id="parentes5" name="parentes5" value="C#">
+                    <label for="parentes5">Tio</label>
+                    <input type="checkbox" id="parentes6" name="parentes6" value="Python">
+                    <label for="parentes6">Tia</label>
+                    <input type="checkbox" id="parentes7" name="parentes7" value="Java">
+                    <label for="parentes7">Outos</label>
+                </div>
+            </fieldset>
+
+            
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Conte um pouco mais sobre você: </strong></label>
+                <textarea rows="6" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+    </div>
+
+    </body>
+
 </html>
